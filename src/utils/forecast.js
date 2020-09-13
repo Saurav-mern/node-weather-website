@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
           undefined,
           `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} degrees out and it feels like ${response.body.current.feelslike}. 
           The local time is ${response.body.location.localtime}.
-          Humidity is ${response.body.current.humidity}.  Wind speed is ${response.body.current.wind_speed} km/h and wind direction is ${response.body.current.wind_degree} ${response.body.current.wind_dir}. `
+          Humidity is ${response.body.current.humidity} %.  Wind speed is ${response.body.current.wind_speed} km/h and wind direction is ${response.body.current.wind_degree} ${response.body.current.wind_dir}. `
         );
     }
   });
